@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.6em;
   background-color: #f4f4f4;
 }
@@ -22,7 +22,7 @@ li {
 .align-left {
 	float: left;
 	margin-left: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .align-right {
@@ -32,22 +32,63 @@ li {
 }
 
 header {
-	background: #6799ff;
-	height: 30px;
-	color: white;
-	padding: 5px, 10px;
-	overflow: auto;
-	font-size: 15px;
+    background: #FF7700;
+    height: 40px;
+    color: white;
+    /*padding: 10px, 10px;*/
+    overflow: auto;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+
+a:link, a:visited {
+    background-color: #4285f4;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 2px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.quizContainer {
+	display: none;
+	margin-top: 10px;
+}
+
+.question {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.nextButton {
+border-width: 0;
+outline: none;
+border-radius: 2px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+background-color: #4285f4;
+color: #ecf0f1;
+transition: background-color .3s;
 }
 
 footer {
-	background: #6799ff;
-	height: 30px;
-	color: white;
-	padding: 5px, 10px;
-	overflow: auto;
-	font-size: 15px;
+    background: #FF7700;
+    height: 40px;
+    color: white;
+    padding: 5px, 10px;
+    overflow: auto;
+    font-size: 15px;
+    margin-top: 10px;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
 }
+
 
 @media only screen and (max-width: 900px) {
 	.container {
@@ -55,7 +96,27 @@ footer {
 }
 }
 
-#start {
-	margin: 10px;
+.start {
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 380px;
+margin-right: 380px;
+position: relative;
+border-width: 0;
+outline: none;
+border-radius: 2px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+background-color: #4285f4;
+color: #ecf0f1;
+transition: background-color .3s;
 
+}
+
+.quizMessage {
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.nextButton {
+	margin-bottom: 10px;
 }
