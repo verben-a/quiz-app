@@ -16,102 +16,19 @@
 		<a href="https://analytics.google.com/analytics/web/">analytics.google.com</a></div>
 	</header>
 	<main>
-	<button id="start">Start a quiz</button>
-		<form class="questionForm" id="q1" data-question="1">
-		<h3>1. Why is it important that you maintain one unfiltered view when using filters with your analytics account?</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> Without one unfiltered profile, you will not be able to use a filter for multiple views</li>
-			<li><input type="radio" name="q1" value="b"> You can only use predefined filters with unfiltered views</li>
-			<li><input type="radio" name="q1" value="c"> There is no reason to maintain an unfiltered view</li>
-			<li><input type="radio" name="q1" value="d"> Since raw data cannot be reprocessed, maintaining an unfiltered view ensures that the original data can always be accessed</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q2" data-question="2">
-		<h3>2. Which of these best defines a Destination goal in Google Analytics?</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> A website page viewed by the user once they have completed a desired action</li>
-			<li><input type="radio" name="q1" value="b"> A KPI</li>
-			<li><input type="radio" name="q1" value="c"> A page that has given you revenue</li>
-			<li><input type="radio" name="q1" value="d"> The most popular page on your site</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q3" data-question="3">
-		<h3>3. You define a Destination goal by:</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> Adding the e-commerce code to the goal page</li>
-			<li><input type="radio" name="q1" value="b"> Adding the conversion ID to the tracking code on the goal page</li>
-			<li><input type="radio" name="q1" value="c"> Dragging the goal page onto a Standard Report</li>
-			<li><input type="radio" name="q1" value="d"> Specifying the conversion page in your view settings within Google Analytics</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q4" data-question="4">
-		<h3>4. Which campaign tracking variables should you always use when manually tagging a URL?</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> utm_content, utm_campaign</li>
-			<li><input type="radio" name="q1" value="b"> utm_source, utm_medium, utm_campaign</li>
-			<li><input type="radio" name="q1" value="c"> utm_source, utm_content</li>
-			<li><input type="radio" name="q1" value="d"> utm_campaign, utm_adgroup, utm_term</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q5" data-question="5">
-		<h3>5. Which is the recommended parameter for identifying different versions of an ad?</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> utm_ad</li>
-			<li><input type="radio" name="q1" value="b"> utm_medium</li>
-			<li><input type="radio" name="q1" value="c"> utm_creative</li>
-			<li><input type="radio" name="q1" value="d"> utm_content</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q6" data-question="6">
-		<h3>6. Which of the following AdWords reports would you use to investigate whether you should modify your bidding during certain hours of the day to optimize conversions?</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> Campaigns</li>
-			<li><input type="radio" name="q1" value="b"> Keywords</li>
-			<li><input type="radio" name="q1" value="c"> Search Queries</li>
-			<li><input type="radio" name="q1" value="d"> Time of Day</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q7" data-question="7">
-		<h3>7. The code snippet for tracking websites with Google Analytics is written in:</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> AJAX</li>
-			<li><input type="radio" name="q1" value="b"> Flash</li>
-			<li><input type="radio" name="q1" value="c"> JavaScript</li>
-			<li><input type="radio" name="q1" value="d"> PHP</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-
-		<form class="questionForm" id="q8" data-question="8">
-		<h3>8. What is Bounce Rate?</h3>
-		<ul>
-			<li><input type="radio" name="q1" value="a"> the percentage of visits when a visitor viewed only one page and then exited without a second interaction on the site</li>
-			<li><input type="radio" name="q1" value="b"> the percentage of times unique visitors returned to your website in a given time period</li>
-			<li><input type="radio" name="q1" value="c"> the percentage of sessions for which a visitor exits from your homepage</li>
-			<li><input type="radio" name="q1" value="d"> the percentage of site exits</li>
-			<button id="submit">Submit</button>
-		</ul>
-		</form>
-		<div id="results"></div>
-		<br>
-	</main>
-	<footer>
-		<div class="align-left">Total: 10 questions</div>
-	</footer>
-</div>
-
+	<button class="start">Start a quiz</button>
+	<div class="quizContainer">
+        <div class="question"></div>
+        <ul class="choiceList"></ul>
+        <div class="quizMessage"></div>
+        <div class="result"></div>
+        <div class="nextButton">Next Question</div>
+        <br>
+    </div>
+    <footer>
+    	<div class="align-left">Total: 8 questions</div>
+    </footer>
+	
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </body>
