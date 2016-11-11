@@ -16,8 +16,7 @@ body {
 .start {
     background-color: #4285f4;
     color: #ecf0f1;
-    margin-right: 378px;
-    margin-left: 378px;
+    /*margin: 0px auto;*/
     overflow: hidden;
     border-width: 0;
     outline: none;
@@ -25,6 +24,7 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
     transition: background-color .3s;
     height: 30px;
+    width: 100px;
     font-size: 16px;
 }
 
